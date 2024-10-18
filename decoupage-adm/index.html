@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découpage administratif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        select,
+        button {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Découpage administratif</h1>
+
+    <label for="regions">Liste des régions :</label>
+    <select id="regions">
+        <option value="">Sélectionnez une région</option>
+    </select>
+
+    <label for="departements">Liste des départements :</label>
+    <select id="departements" disabled>
+        <option value="">Sélectionnez un département</option>
+    </select>
+
+    <button id="show-communes" disabled>Afficher les communes</button>
+
+    <h2>Communes</h2>
+    <ul id="communes-list"></ul>
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
